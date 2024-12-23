@@ -1,0 +1,2 @@
+my @array = (1, 2, 3);my $size = @array; # Get the size of the array.for my $i (0 .. $size - 1) {# Check if the index is within bounds.    my $element = $array[$i];    print "Element at index $i: $element\n";}
+#Alternatively, use a safer approach with a defined default value if the index is out of range.my $element = $array[3] // 'Element not found'; #Default to 'Element not found' if index is out of bounds.print "Element at index 3 (safe): $element\n";
